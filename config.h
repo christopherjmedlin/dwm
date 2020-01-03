@@ -122,7 +122,8 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,			XK_c,	   spawn,		   STCMD("bin/dwmconf") },
 	{ MODKEY|ControlMask,			XK_b,	   spawn,		   STCMD("newsboat") },
 	{ MODKEY|ControlMask,			XK_g,	   spawn,		   SHCMD("bin/emu.sh") },
-	{ MODKEY|ControlMask,			XK_v,	   spawn,		   STCMD("bin/projects.sh") }
+	{ MODKEY|ControlMask,			XK_v,	   spawn,		   STCMD("bin/projects.sh") },
+	{ MODKEY|ControlMask,			XK_w,	   spawn,		   SHCMD("bin/bookmarks.sh") }
 };
 
 /* button definitions */
