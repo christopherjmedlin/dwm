@@ -30,6 +30,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Discord",  NULL,       NULL,       1 << 5,       0,           -1 },
 };
 
 /* layout(s) */
@@ -116,10 +117,10 @@ static Key keys[] = {
 
 	{ MODKEY|ControlMask,			XK_n,	   spawn, 		   STCMD("ncmpcpp") },
 	{ MODKEY|ControlMask,			XK_h,	   spawn, 		   STCMD("htop") },
-    { MODKEY|ControlMask,			XK_m,	   spawn, 		   STCMD("neomutt") },
+    { MODKEY|ControlMask,			XK_m,	   spawn, 		   STCMD("bin/mutt.sh") },
 	{ MODKEY|ControlMask,			XK_f,	   spawn,		   {.v = browsercmd } },
 	{ MODKEY|ControlMask,			XK_d,	   spawn,		   {.v = discordcmd } },
-	{ MODKEY|ControlMask,			XK_c,	   spawn,		   STCMD("bin/dwmconf") },
+	{ MODKEY|ControlMask,			XK_c,	   spawn,		   STCMD("bin/dwmconf.sh") },
 	{ MODKEY|ControlMask,			XK_b,	   spawn,		   STCMD("newsboat") },
 	{ MODKEY|ControlMask,			XK_g,	   spawn,		   SHCMD("bin/emu.sh") },
 	{ MODKEY|ControlMask,			XK_v,	   spawn,		   STCMD("bin/projects.sh") },
