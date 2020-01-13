@@ -116,6 +116,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,				XK_b,      spawn,		   {.v = mpcprevcmd} },
 
 	{ MODKEY|ControlMask,			XK_n,	   spawn, 		   STCMD("ncmpcpp") },
+	{ MODKEY|ControlMask,			XK_a,	   spawn, 		   STCMD("alsamixer") },
 	{ MODKEY|ControlMask,			XK_h,	   spawn, 		   STCMD("htop") },
     { MODKEY|ControlMask,			XK_m,	   spawn, 		   STCMD("bin/mutt.sh") },
 	{ MODKEY|ControlMask,			XK_f,	   spawn,		   {.v = browsercmd } },
