@@ -68,6 +68,7 @@ static const char *termcmd[] = { "st", NULL };
 static const char *screenshotcmd[] = { "scrot", NULL };
 static const char *browsercmd[] = { "firefox", NULL };
 static const char *discordcmd[] = { "discord", NULL };
+static const char *zathuracmd[] = { "zathura", NULL };
 
 static const char *mpctogglecmd[] = { "mpc", "toggle", NULL};
 static const char *mpcnextcmd[] = { "mpc", "next", NULL};
@@ -125,7 +126,9 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,			XK_b,	   spawn,		   STCMD("newsboat") },
 	{ MODKEY|ControlMask,			XK_g,	   spawn,		   SHCMD("bin/emu.sh") },
 	{ MODKEY|ControlMask,			XK_v,	   spawn,		   STCMD("bin/projects.sh") },
-	{ MODKEY|ControlMask,			XK_w,	   spawn,		   SHCMD("bin/bookmarks.sh") }
+	{ MODKEY|ControlMask,			XK_w,	   spawn,		   SHCMD("bin/bookmarks.sh") },
+	{ MODKEY|ControlMask,			XK_z,	   spawn,		   {.v = zathuracmd} },		   
+	{ MODKEY|ControlMask,			XK_slash,	   spawn,		   STCMD("bin/mansearch.sh") } 
 };
 
 /* button definitions */
